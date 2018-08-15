@@ -2,22 +2,22 @@
 const mongoose = require('mongoose');
 
 // create the car schema
-const carSchema = new mongoose.Schema({
-   make: {
+const bookSchema = new mongoose.Schema({
+   author: {
        type:String,
-       required: 'Make is required'
+       required: 'Author is required'
    },
-   model: {
+   name: {
        type: String,
-       required: 'Model is required'
+       required: 'Name is required'
    },
     year: {
        type: Number,
         required: 'Year is required'
     },
-    mileage: {
+    price: {
         type: Number,
-        required: 'Mileage is required'
+        required: 'Price is required'
     },
     colour: {
         type: String,
@@ -26,4 +26,4 @@ const carSchema = new mongoose.Schema({
 });
 
 // make it public
-module.exports = mongoose.model('Car', carSchema);
+module.exports = mongoose.model('Book', bookSchema);

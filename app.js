@@ -10,12 +10,13 @@ const config = require('./config/globals');
 
 var indexRouter = require('./controllers/index');
 var usersRouter = require('./controllers/users');
-const cars = require('./controllers/cars');
+const books = require('./controllers/books');
 
 var app = express();
 
 
 // view engine setup
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -27,8 +28,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-// map all requests with /cars to the cars controller
-app.use('/cars', cars);
+// map all requests with /books to the books controller
+app.use('/books', books);
 
 // db connection
 mongoose.connect(config.db);

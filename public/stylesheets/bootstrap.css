@@ -54,19 +54,46 @@ html {
   width: device-width;
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block;
+article, aside, figcaption, figure, header, hgroup, main, section {
+text-align: center;
+
+}
+
+nav{
+  background-color: #2e2e2e;
+}
+.card{
+  margin-left: 5%;
+te}
+footer{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;   /* Height of the footer */
+  background:#2e2e2e;
+  color:white;
+
+}
+main{
+  text-align: center;
+  padding-top:20%;
+  background-color:#2e2e2e;
+}
+.jumbotron{
+color:black;
+margin-top:2%;
 }
 
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 500;
   line-height: 1.5;
-  color: #212529;
-  text-align: left;
-  background-color: #fff;
+  color: #2e2e2e;
+  text-align: center;
+  background-color: white;
+
 }
 
 [tabindex="-1"]:focus {
@@ -96,6 +123,7 @@ abbr[data-original-title] {
   text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
+
 }
 
 address {
@@ -580,11 +608,8 @@ pre code {
 }
 
 .container-fluid {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+
+margin-top: 2%;
 }
 
 .row {

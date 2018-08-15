@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('cartracker:server');
+var debug = require('debug')('Books:server');
 var http = require('http');
 
 /**
